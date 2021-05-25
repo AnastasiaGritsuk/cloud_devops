@@ -1,0 +1,20 @@
+<ng-container *ngIf="(quote$ | async) as quote">
+  <app-quote [quote]="quote"></app-quote>
+
+  <div class="quote-actions">
+    <button
+      class="get-quote-btn"
+      title="Get another Quote"
+      [@isClicked]="(isRefreshBtnClicked$ | async) ? 'isClicked' : ''"
+      (click)="getRandomQuote()"
+    ></button>
+
+    <button
+      class="share-quote-btn"
+      title="Share"
+      (click)="openShareModal(quote)"
+    ></button>
+  </div>
+</ng-container>
+
+
