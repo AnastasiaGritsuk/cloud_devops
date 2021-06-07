@@ -46,7 +46,7 @@ export class QuoteApiService {
   }
 
   share(quote: Quote, contactDetails?: ContactData): Observable<any> {
-    const url = `${ this.shareApiBase }/share`;
+    const url = `${ this.shareApiBase }/sendEmail`;
 
     return this.http.post<any>(url, { quote, ...contactDetails });
   }
