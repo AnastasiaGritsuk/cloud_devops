@@ -1,0 +1,9 @@
+node_modules
+npm-debug.log
+Dockerfile
+build
+static
+client
+data
+scripts
+nginx
