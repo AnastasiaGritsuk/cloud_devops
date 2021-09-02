@@ -10,7 +10,7 @@ services:
       - ./nodemon.json:/home/node/app/nodemon.json
     container_name: ts-node-docker
     expose:
-      - '4000'
+      - '5000'
     ports:
       - '5000:5000'
     command: npm run dev

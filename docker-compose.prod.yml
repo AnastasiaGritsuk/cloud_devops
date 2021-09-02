@@ -5,4 +5,4 @@ services:
       context: .
       dockerfile: Dockerfile
       target: production
-    command: node build/src/main.js
+    command: node build/main.js
