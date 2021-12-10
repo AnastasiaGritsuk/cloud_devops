@@ -2,7 +2,7 @@ import express from 'express';
 import path  from 'path';
 import 'dotenv/config';
 import cors from 'cors';
-import indexRouter from './app/routes/index';
+import indexRouter from './app/routes';
 import quotesRouter from './app/routes/quotes';
 
 const app = express();

@@ -5,9 +5,12 @@
     "outDir": "./build",
     "esModuleInterop": true,
     "strict": true,
-    "baseUrl": ".",
+    "baseUrl": "..",
     "moduleResolution": "node"
   },
-  "include": ["src"],
-  "exclude": ["client", "script.ts"]
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "./client", "script.ts"]
 }
