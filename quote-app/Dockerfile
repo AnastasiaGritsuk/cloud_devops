@@ -1,4 +1,9 @@
 FROM node:14-alpine
+#ARG BASE_IMAGES_REGISTRY="136433206089.dkr.ecr.us-east-1.amazonaws.com"
+#ARG BASE_IMAGES_REPOSITORY="base-images"
+#ARG BASE_NODE_IMAGE_TAG="node-14.1.0-alpine"
+#
+#FROM $BASE_IMAGES_REGISTRY/$BASE_IMAGES_REPOSITORY:$BASE_NODE_IMAGE_TAG
 
 # Create app directory
 RUN mkdir -p /usr/src/app
