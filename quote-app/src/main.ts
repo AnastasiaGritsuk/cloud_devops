@@ -2,7 +2,7 @@ import express from 'express';
 import path  from 'path';
 import 'dotenv/config';
 import cors from 'cors';
-import indexRouter from './app/routes/index';
+import indexRouter from './app/routes';
 import quotesRouter from './app/routes/quotes';
 
 const app = express();
@@ -15,6 +15,6 @@ app.use(express.static(path.join(__dirname, '..', 'static')));
 app.use('/', indexRouter);
 app.use('/api/', quotesRouter);
 
-app.listen(port, () => {
+app.listen(Number(port), '0.0.0.0', () => {
   console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
 });

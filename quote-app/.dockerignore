@@ -1,0 +1,8 @@
+node_modules
+npm-debug.log
+Dockerfile
+build
+client
+data
+scripts
+nginx

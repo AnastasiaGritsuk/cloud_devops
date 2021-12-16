@@ -4,8 +4,10 @@
   "description": "",
   "main": "main.ts",
   "scripts": {
-    "build": "cd client && npm run build",
-    "start": "nodemon ./src/main.ts",
+    "start": "NODE_PATH=./build node build/src/main.js",
+    "start:dev": "nodemon ./src/main.ts",
+    "build:client": "cd client && npm i && npm run build",
+    "build": "tsc -p .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

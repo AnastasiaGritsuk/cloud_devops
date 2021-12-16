@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NgxSmartModalService } from 'ngx-smart-modal';
 
-import { QuotePreviewComponent, QuoteShareModalComponent, ShareFormComponent } from '../../components';
+import { QuotePreviewComponent, QuoteShareModalComponent, ShareFormComponent } from '../index';
 import { ContactData } from '../../models';
 import { NgxSmartModalServiceMock } from '../../stub';
 
